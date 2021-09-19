@@ -418,13 +418,13 @@ def main(_):
 
         # instantiate csv writer
         if FLAGS.Dataset_full:
-            with open('%s/results/longformer_lac/predictions_longformer_lac_full_HM.csv' % PROJECT_DIR if FLAGS.local else '%s/results/longformer_lac/predictions_longformer_lac_full.csv' % PROJECT_DIR_VM,'w') as outfile:
+            with open('%s/results/longformer_lac/predictions_longformer_lac_full.csv' % PROJECT_DIR if FLAGS.local else '%s/results/longformer_lac/predictions_longformer_lac_full.csv' % PROJECT_DIR_VM,'w') as outfile:
                 columns = ['HADM_ID', 'TEXT', 'TOKENIZED_TEXT', 'GROUND_TRUTH', 'PREDICTIONS', 'ATTENTION_INDICES']
                 w = csv.DictWriter(outfile, fieldnames=columns)
                 w.writeheader()
         else:
             with open(
-                    '%s/results/longformer_lac/predictions_longformer_lac_50_HM.csv' % PROJECT_DIR if FLAGS.local else '%s/results/longformer_lac/predictions_longformer_lac_50.csv' % PROJECT_DIR_VM,
+                    '%s/results/longformer_lac/predictions_longformer_lac_50.csv' % PROJECT_DIR if FLAGS.local else '%s/results/longformer_lac/predictions_longformer_lac_50.csv' % PROJECT_DIR_VM,
                     'w') as outfile:
                 columns = ['HADM_ID', 'TEXT', 'TOKENIZED_TEXT', 'GROUND_TRUTH', 'PREDICTIONS', 'ATTENTION_INDICES']
                 w = csv.DictWriter(outfile, fieldnames=columns)
