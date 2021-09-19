@@ -1,0 +1,15 @@
+###########################
+TEST RESULTS WITH K=5 FOLDS
+###########################
+{'accuracy_mean': tensor(0.9020), 'accuracy_std': tensor(0.0015),
+'accuracy_subset_mean': tensor(0.0211), 'accuracy_subset_std': tensor(0.0024),
+'auc_macro_mean': tensor(0.8263), 'auc_macro_std': tensor(0.0035),
+'auc_micro_mean': tensor(0.8667), 'auc_micro_std': tensor(0.0044),
+'f_1_macro_mean': tensor(0.3249), 'f_1_macro_std': tensor(0.0202),
+'f_1_micro_mean': tensor(0.4335), 'f_1_micro_std': tensor(0.0132),
+'precision_macro_mean': tensor(0.5389), 'precision_macro_std': tensor(0.0250),
+'precision_macro_topk_mean': tensor(0.4570), 'precision_macro_topk_std': tensor(0.0136),
+'precision_micro_mean': tensor(0.7227), 'precision_micro_std': tensor(0.0209),
+'precision_micro_topk_mean': tensor(0.5239), 'precision_micro_topk_std': tensor(0.0106),
+'recall_macro_mean': tensor(0.2328), 'recall_macro_std': tensor(0.0175),
+'recall_micro_mean': tensor(0.3099), 'recall_micro_std': tensor(0.0144)}
